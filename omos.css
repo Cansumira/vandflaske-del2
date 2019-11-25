@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper{
+		max-width: 420px;
+		font: 1.2em Candara, arial, sans-serif;
+		display: grid;
+		grid-gap: 10px;
+  		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto;
+		margin: 0px;
+		}
+
+.main-head {
+	grid-column: 2/2;
+	text-align: center;
+	font-size: 35px;
+}
+.main-nav {
+	grid-column: 1/4;
+}
+
+.content {
+	grid-column: 1/4;
+}
+
+.main-footer {
+	grid-column: 1/4;
+}
+
+.button {
+  background-color: #D2EBC4; /* Green */
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 8em;
+}
+
+h1{font-size: 20px;
+text-align: center;
+}
+

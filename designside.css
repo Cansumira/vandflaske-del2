@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper{
+		max-width: 420px;
+		font: 1.2em Candara, arial, sans-serif;
+		display: grid;
+		grid-gap: 10px;
+  		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto;
+		margin: 0px;
+		}
+.main-head {
+	grid-column: 2/2;
+	text-align: center;
+	font-size: 35px;
+}
+
+.main-nav {
+	grid-column: 1/4;
+}
+
+
+.content {
+	grid-column: 2/4;
+	grid-row: 3;
+}
+
+.flaske {
+	grid-column: 2/2
+		
+}
+.main-footer {
+	grid-column: 1/4;
+}
+
+.button {
+  background-color: #D2EBC4; /* Green */
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  grid-column: 2/2
+}
+
+h1{font-size: 20px;
+text-align: center;
+}
+
+
+
+h1{font-size: 20px;
+text-align: center;
+}
+
