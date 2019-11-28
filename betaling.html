@@ -3,12 +3,11 @@
 <!-- lang=da er sprog på dansk -->
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Vandflaske</title>
 
 	<link rel="stylesheet" href="betaling.css">
 	<link rel="stylesheet" href="menu.css" type="text/css">
-	
 </head>
 
 <body>
@@ -16,35 +15,32 @@
 	
 	<div class="wrapper">
 		
-		<header class="main-head">Betaling </header>
+		<header class="main-head"> Betaling </header>
 	
  <nav class="main-nav">
 			
-	 
+	 <!--burgermenu-->
 	
  <div id="menuToggle">
 
+   
     <input type="checkbox" />
-	
-<!--Burger menu ikon-->
-    <span></span>
-    <span></span>
-    <span></span>
     
-    
+    <span></span>
+    <span></span>
+    <span></span>
 
     <ul id="menu">
-   		 <li> <a href="forside.html">Forside</a></li>
-    	 <li> <a href="design.html">Design din flaske</a></li>
-    	 <li> <a href="betaling.html">Betaling</a></li>
-		 <li> <a href="omos.html">Om os</a></li>
+      <a href="forside.html"><li>Forside</li></a>
+      <a href="design.html"><li>Design din flaske</li></a>
+      <a href="betaling.html"><li>Betaling</li></a>
+	  <a href="omos.html"><li>Om os</li></a>
     </ul>
-	 
   </div>
   	
-</nav>	
+</nav>
 	
-	<article class="content">
+	<article class="content1">
 		
 		<h1>Oplysninger</h1>
 		
@@ -64,13 +60,115 @@
 			<p>Udløbsdato (mm/yy): </p>
 			<p>Kontrolcifre:</p>
 			
-		<h2>Beløb i alt</h2>
+			<h2>Beløb i alt</h2>
 			
 			
 	</article>
+		<h3></h3>
+		<article class="content3">
+	
+		<h1>Din ordre</h1>
 		
-			<a href="køb.html" class="button"> Gennemfør køb› </a>
+		<form action="boks3">
+			Din tekst på flasken:<br>
+				<input type="text" name="tekst" value="eksempel text ...">
+			<br>
+			Din leveringsadresse:<br>
+				<input type="text" name="adresse" value="****">
+			<br>
+			
+			<p>Fragt 40 kr.</p>
+			<p>Pris i alt 240 kr.</p>	
+	
+	</form> 
 		
+		<a href="køb.html" class="button"> KØB› </a>
+		
+		</article>
+		
+		<!--køb knap-->
+			<a href="køb.html" class="button"> Gennemfør køb› &#8250;</a>
+
+	 
+ <!--desktop start--!
+
+	<!--Top nav-->
+<nav class="desktop-nav">
+	<ul id="top-nav">
+		<li> <a href="forside.html">Forside</a></li>
+    	<li> <a href="design.html">Design din flaske</a></li>
+    	<li> <a href="betaling.html">Betaling</a></li>
+	 	<li> <a href="omos.html">Om os</a></li>
+			</ul>
+				
+</nav>
+
+<!--Indhold og betaling--! 		
+<!--udfyldelse bokse-->
+
+	<article class="content4">
+		
+		<form action="boks">
+			Fornavn:<br>
+				<input type="text" name="fornavn" value="eks.Daniel">
+			<br>
+			Efternavn:<br>
+				<input type="text" name="efternavn" value="eks.Jensen">
+			<br>
+			Din fulde adresse:<br>
+				<input type="text" name="Adresse" value="****">
+			<br>
+			Postnummer:<br>
+				<input type="text" name="post nr." value="****">
+			
+		</form> 
+		
+	</article>
+		
+	<article class="content5">
+		
+		<h1>Betalingskort</h1>
+		
+		<form action="boks2">
+			Navn paa kort:<br>
+				<input type="text" name="fornavn" value="eks.Daniel Jensen">
+			<br>
+			Kortnummer:<br>
+				<input type="text" name="kortnummer" value="****">
+			<br>
+			Udløbsdato (mm/yyyy):<br>
+				<input type="text" name="dato" value="****">
+			<br>
+			Kontrolcifre:<br>
+				<input type="text" name="cifre" value="****">
+			<br><br>
+		
+				<input type="submit" value="gem">
+			
+</form> 
+		
+	</article>
+		
+	<article class="content6">
+	
+		<h1>Din ordre</h1>
+		
+		<form action="boks3">
+			Din tekst på flasken:<br>
+				<input type="text" name="tekst" value="eksempel text ...">
+			<br>
+			Din leveringsadresse:<br>
+				<input type="text" name="adresse" value="****">
+			<br>
+			
+			<p>Fragt 40 kr.</p>
+			<p>Pris i alt 240 kr.</p>	
+	
+	</form> 
+		
+		<a href="køb.html" class="buttondesktop"> KØB› </a>
+		
+		</article>
 				
 <footer class="main-footer">
 	
