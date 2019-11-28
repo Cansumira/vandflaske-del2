@@ -11,7 +11,7 @@
 		}
 
 .main-head {
-	grid-column: 2/2;
+	grid-column: 1/2;
 	text-align: center;
 	font-size: 35px;
 }
@@ -51,11 +51,65 @@ text-align: center;
 	display: none;
 }
 
+.billede-1 {
+		display: none;
+		grid-column: 3/13;
+		grid-row: 3;
+	}
+	
+	.personalebeskrivelse-1 {
+		display: none;
+		grid-column: 5/13;
+		grid-row: 3;
+	}
+	
+	.billede-2{
+		display: none;
+		grid-column: 3/13;
+		grid-row: 4;
+	}
+	
+	.personalebeskrivelse-2 {
+		display: none;
+		grid-column: 5/13;
+		grid-row: 4;
+	}
+	
+	.billede-3{
+		display: none;
+		grid-column: 3/13;
+		grid-row: 5;
+	}
+	
+	.personalebeskrivelse-3 {
+		display: none;
+		grid-column: 5/13;
+		grid-row: 5;
+	}
+	
+	.billede-4{
+		display: none;
+		grid-column: 3/13;
+		grid-row: 6;
+	}
+	
+	.personalebeskrivelse-4 {
+		display: none;
+		grid-column: 5/13;
+		grid-row: 6;
+	}
 
 @media (min-width: 700px) {
 	.wrapper{
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 	/*Elementer fra mobil version*/
+	.main-head {
+		text-align: center;
+		grid-column: 5/9;
+		grid-row: 2;
+		font-family: Merienda One;
+	}
+	
 	.content {
 		display: none;
 	}
@@ -63,6 +117,7 @@ text-align: center;
 	.main-nav {
 		display: none;
 	}
+	
 	
 	/*Elementer til Desktop version*/
 	/*Det her er styling af Top navigationen*/
@@ -93,7 +148,61 @@ li a {
 li a:hover {
   	background-color: #111;
 }
-.main-footer {
-		grid-column: 1/13
+
+	.billede-1 {
+		display: grid;
+		grid-column: 3/13;
+		grid-row: 3;
 	}
+	
+	.personalebeskrivelse-1 {
+		display: grid;
+		grid-column: 5/13;
+		grid-row: 3;
+	}
+	
+	.billede-2{
+		display: grid;
+		grid-column: 3/13;
+		grid-row: 4;
+	}
+	
+	.personalebeskrivelse-2 {
+		display: grid;
+		grid-column: 5/13;
+		grid-row: 4;
+	}
+	
+	.billede-3{
+		display: grid;
+		grid-column: 3/13;
+		grid-row: 5;
+	}
+	
+	.personalebeskrivelse-3 {
+		display: grid;
+		grid-column: 5/13;
+		grid-row: 5;
+	}
+	
+	.billede-4{
+		display: grid;
+		grid-column: 3/13;
+		grid-row: 6;
+	}
+	
+	.personalebeskrivelse-4 {
+		display: grid;
+		grid-column: 5/13;
+		grid-row: 6;
+	}
+	
+.main-footer {
+		grid-column: 1/13;
+		text-align: center;
+		background-color: #467302;
+		color:white;
+		font-family: Open Sans;
+	}
+	
 }
