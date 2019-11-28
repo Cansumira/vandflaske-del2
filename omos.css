@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 .wrapper{
-		max-width: 420px;
+		
 		font: 1.2em Candara, arial, sans-serif;
 		display: grid;
 		grid-gap: 10px;
@@ -46,3 +46,54 @@ h1{font-size: 20px;
 text-align: center;
 }
 
+.desktop-nav {
+	
+	display: none;
+}
+
+
+@media (min-width: 700px) {
+	.wrapper{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+	/*Elementer fra mobil version*/
+	.content {
+		display: none;
+	}
+	
+	.main-nav {
+		display: none;
+	}
+	
+	/*Elementer til Desktop version*/
+	/*Det her er styling af Top navigationen*/
+.desktop-nav {
+	grid-column: 1/13;
+	display: block;
+}
+#top-nav {	
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #467302;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  	background-color: #111;
+}
+.main-footer {
+		grid-column: 1/13
+	}
+}
