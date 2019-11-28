@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*Her starter mobil version*/
 .wrapper{
-		max-width: 420px;
 		font: 1.2em Candara, arial, sans-serif;
 		display: grid;
 		grid-gap: 10px;
@@ -10,7 +11,7 @@
 		margin: 0px;
 		}
 
-.main-nav {
+#mobil-nav {
 	grid-column: 1/4;
 }
 
@@ -55,4 +56,80 @@
 h1{font-size: 20px;
 text-align: center;
 }
+/*det her er top nav'en til desktop.. den forsvinder efter @media hvis jeg ikke har "display: none; før @media*/
+.desktop-nav {
+	display: none;
+}
 
+
+/*Her starter desktop version*/
+@media (min-width: 600px) {
+  
+	.wrapper {
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+	
+/*Elementer fra mobil versionen*/	
+#mobil-nav {
+	display: none;
+	
+}
+.logo {
+	display: none;
+}
+.content {
+	display: none;
+	
+}
+.dyr {
+	display: none;
+	
+}
+
+.content2 {
+	display: none;
+	
+}
+	
+/*Elementer til desktop version*/
+	
+/*Det her er styling af Top navigationen*/
+.desktop-nav {
+	grid-column: 1/13;
+	display: block;
+}
+#top-nav {	
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #467302;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  	background-color: #111;
+}
+
+
+	
+	
+	
+	
+	
+.main-footer {
+	grid-column: 1/13;
+	background-color: #467302;
+}
+}
