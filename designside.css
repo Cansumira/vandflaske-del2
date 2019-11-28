@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 .wrapper{
-		font: 1.2em Candara, arial, sans-serif;
+		font: 1.2em open sans, arial, sans-serif, merienda-one;
 		display: grid;
 		grid-gap: 10px;
   		grid-template-columns: 1fr 1fr 1fr;
@@ -41,15 +41,14 @@
 }
 
 .button {
-  background-color: #D2EBC4; /* Green */
+  background-color:black; /* Green */
   border: none;
-  color: #000000;
+  color:white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   grid-column: 2/2
 }
@@ -89,6 +88,7 @@ text-align: center;
  	margin: 0;
  	padding: 0;
  	overflow: hidden;
+ 	font-family: open sans, arial, sans-serif, merienda-one; 
  	background-color: #467302;
 }
 
@@ -111,6 +111,7 @@ li a:hover {
 	text-align: center;
 	grid-column: 5/9;
 	grid-row:2;
+	font-family: merienda-one, open sans, arial, sans-serif;
 }
 
 .flaskemobil {
@@ -137,14 +138,34 @@ li a:hover {
 }
 
 .button {
-	grid-column: 6/8;
+	grid-column: 7/9;
 	grid-row:4;
 	text-align: center;
 	display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
+    background-color:black;
+    color:white;
+    font-family: open sans, arial, sans-serif, merienda-one;
+}
+.content { 					/*<--prisen*/
+	grid-column:9/10;
+	grid-row:4;
+	font-family: open sans, arial, sans-serif, merienda-one;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+ }
+ .fa-instagram {
+  background: #125688;
+  color: white;
 }
 .main-footer {
-	grid-column: 6/8;
+	grid-column: 1/13;
 	text-align: center;
+	background-color:#467302; /*<---green*/
+	color:white;
+	font-family: open sans, arial, sans-serif, merienda-one;
 }
