@@ -174,10 +174,14 @@ nav{
 @media only screen and (min-width: 600px) {
 
 
+	/*#menuToggle span
+=======
+
 /*#menuToggle span
 
 
 	/*#menuToggle span
+
 
 
 {
@@ -220,6 +224,9 @@ nav{
 
 	
 	.face {
+
+	margin-left: 40%;}*/
+
 	margin-left: 40%;
 }
 
@@ -228,5 +235,4 @@ nav{
 */
 
 	*/
-
 
