@@ -1,8 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 .wrapper{
-		max-width: 420px;
-		font: 1.2em Candara, arial, sans-serif;
+		font: 1.2em open sans, arial, sans-serif, merienda-one;
 		display: grid;
 		grid-gap: 10px;
   		grid-template-columns: 1fr 1fr 1fr;
@@ -19,30 +18,37 @@
 	grid-column: 1/4;
 }
 
-
 .content {
 	grid-column: 2/4;
 	grid-row: 3;
 }
 
-.flaske {
+.flaskemobil {
 	grid-column: 2/2
-		
 }
-.main-footer {
-	grid-column: 1/4;
+.designboksmobil {
+	grid-column: 2/2
+}
+.flaskedesktop {
+	display: none;
+
+}
+.designboksdesktop {
+	display: none;
+}
+.desktop-nav {
+	display: none;
 }
 
 .button {
-  background-color: #D2EBC4; /* Green */
+  background-color:black; /* Green */
   border: none;
-  color: #000000;
+  color:white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   grid-column: 2/2
 }
@@ -51,9 +57,115 @@ h1{font-size: 20px;
 text-align: center;
 }
 
-
-
 h1{font-size: 20px;
 text-align: center;
 }
 
+.main-footer {
+	grid-column: 1/12;
+	text-align: center;
+}
+
+/* her starter desktop version */
+
+@media (min-width: 500px) {
+.wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-nav {
+    display: none;
+}
+
+
+/*Det her er styling af Top navigationen*/
+.desktop-nav {
+	grid-column: 1/13;
+	display: block;
+}
+#top-nav {	
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	font-family: open sans, arial, sans-serif, merienda-one; 
+ 	background-color: #467302;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  	background-color: #111;
+}
+.main-head {
+	text-align: center;
+	grid-column: 5/9;
+	grid-row:2;
+	font-family: merienda-one, open sans, arial, sans-serif;
+}
+
+.flaskemobil {
+	display: none;
+
+}.designboksmobil {
+	display: none;
+}
+
+.flaskedesktop {
+	grid-column: 4/6;
+	grid-row:3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.designboksdesktop {
+	grid-column: 7/9;
+	grid-row:3;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.button {
+	grid-column: 7/9;
+	grid-row:4;
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+    background-color:black;
+    color:white;
+    font-family: open sans, arial, sans-serif, merienda-one;
+}
+.content { 					/*<--prisen*/
+	grid-column:9/10;
+	grid-row:4;
+	font-family: open sans, arial, sans-serif, merienda-one;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+ }
+ .fa-instagram {
+  background: #125688;
+  color: white;
+}
+.main-footer {
+	grid-column: 1/13;
+	text-align: center;
+	background-color:#467302; /*<---green*/
+	color:white;
+	font-family: open sans, arial, sans-serif, merienda-one;
+}
